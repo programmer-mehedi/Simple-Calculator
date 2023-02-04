@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(#cc2b5e , #753a88);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Calculator{
+    background: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 13px 8px 14px -1px rgba(0,0,0,0.57);
+   -webkit-box-shadow: 13px 8px 14px -1px rgba(0,0,0,0.57);
+    -moz-box-shadow: 13px 8px 14px -1px rgba(0,0,0,0.57);
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+    
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background: #ecf0f3;
+    box-shadow: 
+    inset -5px  -5px 12px #ffff,
+    inset  5px 5px 12px rgba(0,0,0,0.16);
+     border: none;
+     border-radius: 30px;
+     color: rgba(70,70,70);
+     font-size: 50px;
+     text-align: end;
+     margin: auto;
+     margin-top: 40px;
+     margin-bottom: 30px;
+     padding: 20px;
+
+}
+button{
+    height: 48px;
+    width: 48px;
+    background: #ecf0f3;
+    box-shadow: 
+     -5px  -5px 12px #ffff,
+      5px 5px 12px rgba(0,0,0,0.16);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background: #323330;
+    color: #ffff;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* ==============color part============ */
+.cl{
+    background: #ff0000;
+    color: #ffff;
+}
+.dev , .del ,.min,.pla ,.mul, .per{
+    background: #141e30;
+    color: #fff;
+} 
+.equal{
+    width: 115px;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow: -5px -5px 12px #ffffff,
+    -5px -5px 12px rgba(0,0,0,0.1.6);
+    background: #4e39c7;
+    color: #fff;
+}
